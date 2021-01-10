@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey_form</title>
+    <link rel="stylesheet" href="Survey_style.css">
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <h1 id="title" class="text">
+                <span class="gangnam">Gangnam Bar</span> Survey Form
+            </h1>
+            <p id="description" class="text">
+                Thank you for taking the time to help us improve our Bar
+            </p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Your name"
+                    required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Your email"
+                    required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input
+                    type="number"
+                    name="age"
+                    id="number"
+                    class="form-control"
+                    placeholder="Age"
+                    min="10"
+                    max="99"
+                    required>
+            </div>
+            <div class="form-group">
+                <p>How would you describe your current role?</p>
+                <select id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="employee">Employee</option>
+                    <option value="entrepreneur">Entrepreneur</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>How often do you visit <span class="gangnam">Gangnam Bar</span>?</p>
+                <select class="form-control">
+                    <option disabled selected value>Select an option</option>
+                    <option value="onceAMonth">Once a month</option>
+                    <option value="onceAWeek">Once a week</option>
+                    <option value="everyday">Everyday</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend <span class="gangnam">Gangnam Bar</span> to your friends?</p>
+                <label><input 
+                    type="radio"
+                    name="user-recommend"
+                    value="definitely"
+                    class="input-radio"
+                    checked
+                    >Definitely</label>
+                <label><input
+                    type="radio"
+                    name="user-recommend"
+                    class="input-radio"
+                    value="maybe"
+                    >Maybe</label>
+                <label><input
+                    type="radio"
+                    name="user-recommend"
+                    class="input-radio"
+                    value="not sure"
+                    >Not sure</label>
+            </div>
+            <div class="form-group">
+                <p>What do you like most about <span class="gangnam">Gangnam Bar</span>?</p>
+                <select class="form-control">
+                    <option disabled selected>Select an option</option>
+                    <option value="food">Food</option>
+                    <option value="service">Service</option>
+                    <option value="interior">Interior</option>
+                    <option value="prices">Prices</option>
+                    <option value="music">Music</option>
+                    <option value="location">Location</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <label><input type="checkbox" class="input-checkbox" value="food">Food</label>
+                <label><input type="checkbox" class="input-checkbox" value="service">Service</label>
+                <label><input type="checkbox" class="input-checkbox" value="interior">Interior</label>
+                <label><input type="checkbox" class="input-checkbox" value="prices">Prices</label>
+                <label><input type="checkbox" class="input-checkbox" value="music">Music</label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestion?</p>
+                <textarea 
+                    class="input-textarea"
+                    placeholder="Please enter your comment here ..."
+                    ></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
